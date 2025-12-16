@@ -9,13 +9,13 @@ const skillCategories = [
     {
         name: 'Frontend',
         icon: Layout,
-        skills: ['React.js', 'Next.js', 'Angular', 'Tailwind CSS', 'Electron'],
+        skills: ['React.js', 'Next.js', 'Angular', 'Tailwind CSS', 'Electron', 'TypeScript', "CSS", "HTML", "JavasCript", "WordPress",],
         color: 'text-blue-400'
     },
     {
         name: 'Backend',
         icon: Server,
-        skills: ['Node.js', 'Express', 'Prisma', 'APIs REST'],
+        skills: ['Node.js', 'Express', 'Prisma', 'APIs REST', 'TypeScript', 'Python', "TypeORM", "Sequelize",],
         color: 'text-green-400'
     },
     {
@@ -29,11 +29,26 @@ const skillCategories = [
         icon: Smartphone,
         skills: ['React Native', 'Expo'],
         color: 'text-purple-400'
+    }, {
+        name: "Machine Learning",
+        icon: Code,
+        skills: ["Deep Learn"],
+        color: "text-orange-400"
     },
+
+    {
+        name: 'Design',
+        icon: Layout,
+        skills: ['Figma', 'Adobe XD', 'Canva', "PhotoShop"],
+        color: 'text-blue-400'
+    },
+
     {
         name: 'Tools & DevOps',
         icon: Terminal,
-        skills: ['Git', 'Linux', 'CI/CD Concepts', 'Clean Architecture'],
+        skills: [
+            "SAP",
+            'Git', 'Linux', 'CI/CD Concepts', "Cpanel", 'Clean Architecture', "Microsoft Office Word", "Microsft Office Execel", "Microsft Office PowerPoint"],
         color: 'text-orange-400'
     }
 ];

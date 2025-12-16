@@ -13,7 +13,7 @@ const projectList = [
         image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/rm.jpeg",
         title: "Resolvemais web",
         description: "plataforma de busca de prestadores de serviços",
-        tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        tags: ["TypeScript", "Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
         status: "Live",
         links: { demo: "https://resolvemais.ao", github: "#" }
     },
@@ -21,7 +21,7 @@ const projectList = [
         image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/rm.jpeg",
         title: "Resolvemais Mobile",
         description: "aplicação mobile de busca de prestadores de serviços",
-        tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        tags: ["TypeScriptNext.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
         status: "Live",
         links: { demo: "https://resolvemis.ao", github: "#" }
     },
@@ -30,7 +30,7 @@ const projectList = [
         image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/sgi.jpeg",
         title: 'SGI',
         description: 'Sistema de gestão empresarial completo para otimização de processos internos(vistos).',
-        tags: ['React/Nextjs', 'Node.js', 'MySQL', 'Prisma', "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        tags: ['React/Nextjs', "TypeScript", 'Node.js', 'MySQL', 'Prisma', "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
         status: 'Live',
         links: { demo: 'https://sgi.mos.ao', github: '#' }
     },
@@ -38,10 +38,28 @@ const projectList = [
         image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/nt.jpeg",
         title: 'Sistema de Faturação (SAF-T AO)',
         description: 'Software certificado para emissão de faturas e comunicação com AGT.',
-        tags: ['React/Nextjs', 'Node.js', 'MySQL', "Json web tokens", 'Prisma', "git Workflow", "CI/CD", "Jobs background..."],
+        tags: ['React/Nextjs', 'Node.js', "TypeScript", 'MySQL', "Json web tokens", 'Prisma', "git Workflow", "CI/CD", "Jobs background..."],
 
         status: 'Live',
         links: { demo: 'https://nextech-new.vercel.app/', github: '#' }
+    }
+    ,
+    {
+        image: "",
+        title: 'Libras AI Recognition',
+        description: 'Sistema de reconhecimento de linguagem de sinais utilizando Inteligência Artificial.',
+        tags: ['Python', 'TensorFlow', 'React'],
+        status: 'Prototype (Private)',
+        links: { demo: '#', github: '#' }
+    },
+    {
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/pf.jpeg",
+
+        title: 'António Machado- portfolio',
+        description: 'Portfolio de António Machado',
+        tags: ['Nextjs', 'TailWindCSS',],
+        status: 'Prototype (Private)',
+        links: { demo: '#', github: '#' }
     },
     {
         image: "",
@@ -63,7 +81,7 @@ const projectList = [
         image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/st.jpeg",
         title: 'Sleny Tube',
         description: 'Plataforma desktop para download de playlists do YouTube.(pagina do app + app)',
-        tags: ['Next.js', "Electron", "fmpeg", "yt_dlp", "python"],
+        tags: ['Next.js', "Electron", "fmpeg", "yt_dlp", "python", "TypeScript"],
 
         status: 'Live',
         links: { demo: 'https://slenytube.vercel.app/', github: 'https://github.com/machado-developer/slenytube/' }

@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import TechBubbles from './techbubbles';
 
 export default function Hero() {
@@ -22,7 +22,7 @@ export default function Hero() {
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="text-left"
+                        className="text-center md:text-left" // Adjusted for mobile centering
                     >
                         <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-primary text-sm font-medium mb-6">
                             {t.hero.greeting} Antonio Ulundo
@@ -44,7 +44,7 @@ export default function Hero() {
 
                         <TechBubbles></TechBubbles>
 
-                        <div className="flex flex-col sm:flex-row items-center gap-4">
+                        <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4"> {/* Adjusted for mobile button centering */}
                             <a
                                 href="#projects"
                                 className="group relative inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white bg-primary rounded-full overflow-hidden transition-all hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(124,58,237,0.5)]"
@@ -66,9 +66,9 @@ export default function Hero() {
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="relative hidden md:block"
+                        className="relative mt-12 md:mt-0" // Removed 'hidden md:block' to show on mobile, added margin for spacing
                     >
-                        <div className="relative w-full aspect-square max-w-md mx-auto">
+                        <div className="relative w-full aspect-square max-w-xs sm:max-w-sm md:max-w-md mx-auto"> {/* Adjusted max-width for smaller screens */}
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-3xl -z-10" />
                             <img
                                 src="https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/m2.jpg"
@@ -76,8 +76,8 @@ export default function Hero() {
                                 className="w-full h-full object-contain rounded-md rotate-12 rounded-3xl border border-white/10 shadow-2xl relative z-10"
                             />
                             {/* Decorative elements */}
-                            <div className="absolute -top-4 -right-4 w-24 h-24 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 -z-0 animate-bounce delay-700" />
-                            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 backdrop-blur-md rounded-full border border-white/5 -z-0 animate-pulse" />
+                            <div className="absolute -top-4 -right-4 w-20 h-20 sm:w-24 sm:h-24 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 -z-0 animate-bounce delay-700" /> {/* Adjusted size */}
+                            <div className="absolute -bottom-4 -left-4 w-24 h-24 sm:w-32 sm:h-32 bg-primary/10 backdrop-blur-md rounded-full border border-white/5 -z-0 animate-pulse" /> {/* Adjusted size */}
                         </div>
                     </motion.div>
                 </div>
