@@ -3,6 +3,7 @@
 import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
+import TechBubbles from './techbubbles';
 
 export default function Hero() {
     const { t } = useLanguage();
@@ -41,6 +42,8 @@ export default function Hero() {
                             {t.hero.description}
                         </p>
 
+                        <TechBubbles></TechBubbles>
+
                         <div className="flex flex-col sm:flex-row items-center gap-4">
                             <a
                                 href="#projects"
@@ -70,7 +73,7 @@ export default function Hero() {
                             <img
                                 src="https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/m2.jpg"
                                 alt="Antonio Ulundo"
-                                className="w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl relative z-10"
+                                className="w-full h-full object-contain rounded-md rotate-12 rounded-3xl border border-white/10 shadow-2xl relative z-10"
                             />
                             {/* Decorative elements */}
                             <div className="absolute -top-4 -right-4 w-24 h-24 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 -z-0 animate-bounce delay-700" />

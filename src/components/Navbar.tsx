@@ -42,10 +42,12 @@ export default function Navbar() {
                     <div className="flex-shrink-0">
                         <a href="#" className="flex items-center gap-2">
                             <img
-                                src="https://placehold.co/100x40/7c3aed/FFF?text=AU+Dev"
+                                src="https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/machado.jpg"
+
                                 alt="Antonio Ulundo Logo"
                                 className="h-10 w-auto object-contain"
                             />
+                            António Ulundo  Machado
                         </a>
                     </div>
 

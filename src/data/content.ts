@@ -37,6 +37,11 @@ export const content = {
             email: 'Enviar E-mail',
             linkedin: 'LinkedIn',
         },
+
+        cv: {
+            title: 'Curriculum Vitae',
+            download: 'Download CV',
+        },
     },
     en: {
         nav: {
@@ -73,6 +78,10 @@ export const content = {
             title: "Let's talk?",
             email: 'Send Email',
             linkedin: 'LinkedIn',
+        },
+        cv: {
+            title: 'Curriculum Vitae',
+            download: 'Download CV',
         },
     },
 };
