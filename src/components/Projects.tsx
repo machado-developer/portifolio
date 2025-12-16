@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 // For now, embedding as it's static structure.
 const projectList = [
     {
-        image: "",
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/rm.jpeg",
         title: "Resolvemais web",
         description: "plataforma de busca de prestadores de serviços",
         tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
@@ -18,7 +18,7 @@ const projectList = [
         links: { demo: "https://resolvemais.ao", github: "#" }
     },
     {
-        image: "",
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/rm.jpeg",
         title: "Resolvemais Mobile",
         description: "aplicação mobile de busca de prestadores de serviços",
         tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
@@ -27,7 +27,7 @@ const projectList = [
     },
 
     {
-        image: "",
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/sgi.jpeg",
         title: 'SGI',
         description: 'Sistema de gestão empresarial completo para otimização de processos internos(vistos).',
         tags: ['React/Nextjs', 'Node.js', 'MySQL', 'Prisma', "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
@@ -35,7 +35,7 @@ const projectList = [
         links: { demo: 'https://sgi.mos.ao', github: '#' }
     },
     {
-        image: "",
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/nt.jpeg",
         title: 'Sistema de Faturação (SAF-T AO)',
         description: 'Software certificado para emissão de faturas e comunicação com AGT.',
         tags: ['React/Nextjs', 'Node.js', 'MySQL', "Json web tokens", 'Prisma', "git Workflow", "CI/CD", "Jobs background..."],
