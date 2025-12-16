@@ -68,7 +68,7 @@ export default function Hero() {
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-3xl -z-10" />
                             <img
-                                src="https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/machado.jpg"
+                                src="https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/m2.jpg"
                                 alt="Antonio Ulundo"
                                 className="w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl relative z-10"
                             />
