@@ -28,11 +28,11 @@ export default function Hero() {
                         </span>
 
                         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60">
+                            <span className="bg-clip-text text-primary bg-gradient-to-r from-white to-white/60">
                                 {t.hero.role.split('&')[0]}
                             </span>
                             <br />
-                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-gradient">
+                            <span className="bg-clip-text text-purple-800 bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-gradient">
                                 & {t.hero.role.split('&')[1] || 'Developer'}
                             </span>
                         </h1>
