@@ -12,11 +12,39 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* Force Dark Mode Colors by default */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #8b5cf6;
+  /* Violet 500 */
+  --primary-foreground: #ffffff;
+  --secondary: #34d399;
+  /* Emerald 400 */
+  --secondary-foreground: #000000;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --card: #171717;
+  --card-foreground: #ededed;
+  --border: #404040;
+}
+
+/* 
+.dark class remains for manual toggling if needed, 
+but :root is now dark by default 
+*/
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #8b5cf6;
+  --primary-foreground: #ffffff;
+  --secondary: #34d399;
+  --secondary-foreground: #000000;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --card: #171717;
+  --card-foreground: #ededed;
+  --border: #404040;
 }
 
 body {
