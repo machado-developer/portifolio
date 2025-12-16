@@ -68,7 +68,7 @@ export default function Hero() {
                         <div className="relative w-full aspect-square max-w-md mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-full blur-3xl -z-10" />
                             <img
-                                src="https://placehold.co/600x600/1e002e/FFF?text=Antonio+Dev"
+                                src="https://media.licdn.com/dms/image/v2/D4D16AQHQ4EiBMOIg_A/profile-displaybackgroundimage-shrink_350_1400/B4DZq2NDwJJEAc-/0/1763993469900?e=1767225600&v=beta&t=h2XEAH4U1fERXyl76MyfDMMAONY7MRi2sT3XwqK9vjI"
                                 alt="Antonio Ulundo"
                                 className="w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl relative z-10"
                             />
