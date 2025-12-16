@@ -10,33 +10,70 @@ import { cn } from '@/lib/utils';
 // For now, embedding as it's static structure.
 const projectList = [
     {
-        title: 'Business Wave',
-        description: 'Sistema de gestão empresarial completo para otimização de processos internos.',
-        tags: ['React', 'Node.js', 'MySQL'],
-        status: 'Live',
-        links: { demo: '#', github: '#' }
+        image: "",
+        title: "Resolvemais web",
+        description: "plataforma de busca de prestadores de serviços",
+        tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        status: "Live",
+        links: { demo: "https://resolvemais.ao", github: "#" }
     },
     {
+        image: "",
+        title: "Resolvemais Mobile",
+        description: "aplicação mobile de busca de prestadores de serviços",
+        tags: ["Next.js", "React", "Node.js", "MySQL", "Prisma", "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        status: "Live",
+        links: { demo: "https://resolvemis.ao", github: "#" }
+    },
+
+    {
+        image: "",
+        title: 'SGI',
+        description: 'Sistema de gestão empresarial completo para otimização de processos internos(vistos).',
+        tags: ['React/Nextjs', 'Node.js', 'MySQL', 'Prisma', "Json web tokens", "git Workflow", "CI/CD", "Jobs background..."],
+        status: 'Live',
+        links: { demo: 'https://sgi.mos.ao', github: '#' }
+    },
+    {
+        image: "",
         title: 'Sistema de Faturação (SAF-T AO)',
         description: 'Software certificado para emissão de faturas e comunicação com AGT.',
-        tags: ['Electron', 'Express', 'SQLite'],
-        status: 'In Development',
-        links: { demo: '#', github: '#' }
+        tags: ['React/Nextjs', 'Node.js', 'MySQL', "Json web tokens", 'Prisma', "git Workflow", "CI/CD", "Jobs background..."],
+
+        status: 'Live',
+        links: { demo: 'https://nextech-new.vercel.app/', github: '#' }
     },
     {
+        image: "",
         title: 'Libras AI Recognition',
         description: 'Sistema de reconhecimento de linguagem de sinais utilizando Inteligência Artificial.',
         tags: ['Python', 'TensorFlow', 'React'],
-        status: 'Prototype',
+        status: 'Prototype (Private)',
         links: { demo: '#', github: '#' }
     },
     {
-        title: 'Medical Institute Manager',
-        description: 'Sistema de gestão para Instituto de Emergência Médica, focado em triagem e recursos.',
-        tags: ['Next.js', 'Prisma', 'PostgreSQL'],
-        status: 'Live',
+        image: "",
+        title: 'ED',
+        description: ' sistema de reconhecimento de emoções',
+        tags: ["Javascript", "TensorFlow", "Media handMediaPipe"],
+        status: 'Prototype (Private)',
         links: { demo: '#', github: '#' }
     },
+    {
+        image: "https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/st.jpeg",
+        title: 'Sleny Tube',
+        description: 'Plataforma desktop para download de playlists do YouTube.(pagina do app + app)',
+        tags: ['Next.js', "Electron", "fmpeg", "yt_dlp", "python"],
+
+        status: 'Live',
+        links: { demo: 'https://slenytube.vercel.app/', github: 'https://github.com/machado-developer/slenytube/' }
+    },
+    {
+        image: "",
+        title: "Lola",
+        description: "Leitor de usb, que le os dados de texto em forma de audio ",
+        links: { demo: "#", github: "https://github.com/machado-developer/leitor-de-usb/tree/main/src" }
+    }
 ];
 
 export default function Projects() {
@@ -68,9 +105,17 @@ export default function Projects() {
                             className="group relative bg-card border border-white/10 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
                         >
                             {/* Image Placeholder - relying on simple gradient/pattern for now since no assets provided */}
-                            <div className="h-48 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-500">
-                                <MonitorPlay className="w-12 h-12 text-white/20 group-hover:text-primary transition-colors" />
-                            </div>
+                            {project.image ? (
+                                <img
+                                    src={project.image}
+                                    alt={`${project.title} screenshot`}
+                                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                                />
+                            ) : (
+                                <div className="h-48 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-8 group-hover:scale-105 transition-transform duration-500">
+                                    <MonitorPlay className="w-12 h-12 text-white/20 group-hover:text-primary transition-colors" />
+                                </div>
+                            )}
 
                             <div className="p-6">
                                 <div className="flex justify-between items-start mb-4">
@@ -89,7 +134,7 @@ export default function Projects() {
                                 </p>
 
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.tags.map(tag => (
+                                    {project.tags?.map(tag => (
                                         <span key={tag} className="text-xs font-mono px-2 py-1 bg-white/5 rounded text-gray-300">
                                             {tag}
                                         </span>
@@ -97,14 +142,31 @@ export default function Projects() {
                                 </div>
 
                                 <div className="flex items-center gap-4 pt-4 border-t border-white/5">
-                                    <button className="flex items-center text-sm font-medium hover:text-primary transition-colors">
-                                        <ExternalLink className="w-4 h-4 mr-2" />
-                                        {t.projects.demo}
-                                    </button>
-                                    <button className="flex items-center text-sm font-medium hover:text-primary transition-colors">
-                                        <Github className="w-4 h-4 mr-2" />
-                                        {t.projects.github}
-                                    </button>
+
+
+                                    {project.links?.demo && (
+                                        <a
+                                            href={project.links.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm font-medium hover:text-primary transition-colors"
+                                        >
+                                            <ExternalLink className="w-4 h-4 mr-2" />
+                                            {t.projects.demo}
+                                        </a>
+                                    )}
+                                    {project.links?.github && (
+                                        <a
+                                            href={project.links.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center text-sm font-medium hover:text-primary transition-colors"
+                                        >
+                                            <Github className="w-4 h-4 mr-2" />
+                                            {t.projects.github}
+                                        </a>
+                                    )}
+
                                 </div>
                             </div>
                         </motion.div>

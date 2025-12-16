@@ -8,6 +8,7 @@ export const content = {
             projects: 'Projetos',
             testimonials: 'Recomendações',
             contact: 'Contato',
+            cv: 'Descarregar CV',
         },
         hero: {
             role: 'Analista de TI & Desenvolvedor Full Stack',
@@ -50,6 +51,7 @@ export const content = {
             projects: 'Projects',
             testimonials: 'Testimonials',
             contact: 'Contact',
+            cv: 'DownloadCV',
         },
         hero: {
             role: 'IT Analyst & Full Stack Developer',

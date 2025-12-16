@@ -26,6 +26,7 @@ export default function Navbar() {
         { name: t.nav.projects, href: '#projects' },
         { name: t.nav.testimonials, href: '#testimonials' },
         { name: t.nav.contact, href: '#contact' },
+        { name: t.cv.title, href: 'https://raw.githubusercontent.com/machado-developer/portifolio/refs/heads/main/public/cv_Antonio_Machado.pdf' },
     ];
 
     return (
