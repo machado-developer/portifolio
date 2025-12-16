@@ -46,7 +46,7 @@ const skillCategories = [
         name: "SEO",
         icon: NetworkIcon,
         color: 'text-blue-400',
-        Skills: ["Google Profile Business| Perfil de Empresas no Google ", "Google Analytics", "Google Search Console", ""]
+        skills: ["Google Profile Business| Perfil de Empresas no Google ", "Google Analytics", "Google Search Console", ""]
     },
     {
         name: 'Tools & DevOps',
