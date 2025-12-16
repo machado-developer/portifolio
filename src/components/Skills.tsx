@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Smartphone, Layout, Terminal } from 'lucide-react';
+import { Code, Database, Server, Smartphone, Layout, Terminal, NetworkIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const skillCategories = [
@@ -42,7 +42,11 @@ const skillCategories = [
         skills: ['Figma', 'Adobe XD', 'Canva', "PhotoShop"],
         color: 'text-blue-400'
     },
-
+    {
+        name: "SEO",
+        icon: NetworkIcon,
+        Skills: ["Google Profile Business| Perfil de Empresas no Google ", "Google Analytics", "Google Search Console", ""]
+    },
     {
         name: 'Tools & DevOps',
         icon: Terminal,
@@ -87,7 +91,7 @@ export default function Skills() {
                             </div>
 
                             <div className="flex flex-wrap gap-2">
-                                {category.skills.map((skill) => (
+                                {category.skills?.map((skill) => (
                                     <span
                                         key={skill}
                                         className="px-3 py-1 text-sm bg-white/5 border border-white/10 rounded-full text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors cursor-default"
